@@ -28,6 +28,7 @@ dependencies:
   location: ^3.0.2
   settings_ui: ^0.3.0
   localstorage: ^3.0.2+5
+  camera: ^0.5.8+2
 
 
   # The following adds the Cupertino Icons font to your application.

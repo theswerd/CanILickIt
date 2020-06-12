@@ -1,6 +1,8 @@
 PODS:
   - apple_maps_flutter (0.0.1):
     - Flutter
+  - camera (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - flutter_plugin_android_lifecycle (0.0.1):
     - Flutter
@@ -25,6 +27,7 @@ PODS:
 
 DEPENDENCIES:
   - apple_maps_flutter (from `.symlinks/plugins/apple_maps_flutter/ios`)
+  - camera (from `.symlinks/plugins/camera/ios`)
   - Flutter (from `Flutter`)
   - flutter_plugin_android_lifecycle (from `.symlinks/plugins/flutter_plugin_android_lifecycle/ios`)
   - google_maps_flutter (from `.symlinks/plugins/google_maps_flutter/ios`)
@@ -41,6 +44,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   apple_maps_flutter:
     :path: ".symlinks/plugins/apple_maps_flutter/ios"
+  camera:
+    :path: ".symlinks/plugins/camera/ios"
   Flutter:
     :path: Flutter
   flutter_plugin_android_lifecycle:
@@ -60,6 +65,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   apple_maps_flutter: 45925bdf704b86f713fcf6979ee1999d17b2a6e0
+  camera: 38cc83ae9a5667bb5a71c7d9edaf60a91920fd4e
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_plugin_android_lifecycle: dc0b544e129eebb77a6bfb1239d4d1c673a60a35
   google_maps_flutter: df4e7de95264aa0a2f11aac0fc7e313acb8ffc7e

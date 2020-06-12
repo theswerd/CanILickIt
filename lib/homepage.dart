@@ -1,5 +1,7 @@
+import 'package:CanILickIt/canyoulickit.dart';
 import 'package:CanILickIt/history.dart';
 import 'package:CanILickIt/map.dart';
+import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
@@ -17,13 +19,13 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    this.tabController.addListener(() {
+    this.tabController.addListener(() async{
       if (tabController.index == 2) {
+        List<CameraDescription>  cameras = await availableCameras();
+
         showCupertinoModalBottomSheet(
           context: context,
-          builder: (c, s) => Container(
-            color: Colors.white,
-          ),
+          builder: (c, s) => CanYouLickIt(cameras: cameras,),
         );
 
         tabController.index = currentIndex;
